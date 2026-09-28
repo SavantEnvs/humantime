@@ -1,0 +1,10 @@
+# origin: https://app.mayhem.security/mayhemheroes/humantime/parse/6
+project: savantenvs/humantime
+target: parse-buggy-mhh-run-6
+
+cmds:
+  - cmd: /mayhem/parse
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
